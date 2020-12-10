@@ -14,15 +14,6 @@
 
 - is that it cannot be iterated in reverse or traverse from back to front. If we ever lose the reference to this Dot had node of the list it can be lost in memory forever. So its only appropriate to use when you have less.
 
-### _Wrap-up_:
-
-`
-| **_GOOD_**       |   **_BAD_**    |
-| ---------------- | -------------- |
-| - Fast insertion | - Slow look up |
-| - Fast deletion  | - More memory  |
-| - Ordered        |
-| - Flexible Size  |
 
 `
 ## 2.Double Linked List
@@ -37,3 +28,13 @@
 
 - complex to implement and requires more memory and storage then **_Singly Linked List_**
 - need to do some extra performance on actual operation to make sure when we do `insert` or `delete` that the prev property is updated as well.
+
+
+### _Wrap-up_:
+`
+| **_GOOD_**       |   **_BAD_**    |
+| ---------------- | -------------- |
+| - Fast insertion | - Slow look up |
+| - Fast deletion  | - More memory  |
+| - Ordered        |
+| - Flexible Size  |
