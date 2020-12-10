@@ -77,10 +77,14 @@ class DoublyLinkedList {
     const newNode = {
       value: value,
       next: null,
+      prev: null
     };
     const leader = this.traverseToIndex(index - 1);
     const holdingPointer = leader.next;
     leader.next = newNode;
+    newNode.prev = leader;
+    newNode.next = follower;
+    follower.prev = newNode;
     newNode.next = holdingPointer;
     this.length++;
     return this.printList();
@@ -94,15 +98,6 @@ class DoublyLinkedList {
       counter++;
     }
     return currentNode;
-  }
-
-  remove(index) {
-    //check params
-    const leader = this.traverseToIndex(index - 1); //get the pointer to the leader
-    const unwantedNode = leader.next;
-    leader.next = unwantedNode.next;
-    this.length--;
-    return this.printList();
   }
 }
 
