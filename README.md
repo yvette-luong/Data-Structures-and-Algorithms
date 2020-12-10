@@ -31,7 +31,7 @@
 
 
 ### _Wrap-up_:
-`
+
 | **_GOOD_**       |   **_BAD_**    |
 | ---------------- | -------------- |
 | - Fast insertion | - Slow look up |
