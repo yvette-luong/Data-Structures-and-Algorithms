@@ -15,7 +15,7 @@
 - is that it cannot be iterated in reverse or traverse from back to front. If we ever lose the reference to this Dot had node of the list it can be lost in memory forever. So its only appropriate to use when you have less.
 
 
-`
+
 ## 2.Double Linked List
 
 ### _Advantage_:
