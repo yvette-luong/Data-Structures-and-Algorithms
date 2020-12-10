@@ -16,7 +16,7 @@
 
 ### _Wrap-up_:
 
-`
+
 | **_GOOD_**       |   **_BAD_**    |
 | ---------------- | -------------- |
 | - Fast insertion | - Slow look up |
@@ -24,7 +24,7 @@
 | - Ordered        |
 | - Flexible Size  |
 
-`
+
 ## 2.Double Linked List
 
 ### _Advantage_:
