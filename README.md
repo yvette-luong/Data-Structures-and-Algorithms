@@ -72,4 +72,6 @@ access first that is first.
 
 ## NOTE :
 
-- ***`arrays`*** allow something called cache locality which makes them technically faster when accesing its items in memory because they are right next to each other versus a ***`linked list`***. 
+- ***`arrays`*** allow something called cache locality which makes them technically faster when accesing its items in memory because they are right next to each other versus a ***`linked list`*** that has them scattered all over memory and also ***`linked lists`*** have extra memory associated with them because we have to hold on to those pointers.
+
+- ***`linked list`*** have more dynamic memory,we can keep adding things to the list versus an ***`arrays`*** where you have either a static array or a dynamic array that has certain amount of memory. And as soon as it's about to reach its limit it's going to have to double up their memory and create new space for it somewhere in memory.
