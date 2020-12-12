@@ -21,12 +21,11 @@
 // }
 
 
-class DoublyLinkedList {
+class SinglyLinkedList {
     constructor(value) {
       this.head = {
         value: value,
         next: null,
-        prev: null
       };
       this.tail = this.head;
       this.length = 1;
@@ -37,10 +36,8 @@ class DoublyLinkedList {
       const newNode = {
         value: value, 
         next: null,
-        prev: null
       };
       // const newNode = new Node(value)
-      newNode.prev = this.tail;
       this.tail.next = newNode;
       this.tail = newNode;
       this.length++;
@@ -124,10 +121,10 @@ class DoublyLinkedList {
     }
   }
   
-  let myDoublyLinkedList = new DoublyLinkedList(10);
+  let myLinkedList = new SinglyLinkedList(10);
   // console.log(myLinkedList)
-  myDoublyLinkedList.append(5);
-  myDoublyLinkedList.append(16);
+  myLinkedList.append(5);
+  myLinkedList.append(16);
   // myLinkedList.prepend(2);
   // // myLinkedList.printList(); //output: => [ 2, 10, 5, 16 ]
   // myLinkedList.insert(2,99);
