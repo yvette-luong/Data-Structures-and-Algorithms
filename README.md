@@ -6,7 +6,7 @@
 
 ## **_Data Structures:_**
 
-```
+
 - Arrays
 - Stacks
 - Queues
@@ -14,7 +14,7 @@
 - Trees
 - Graphs
 - Hash Tables
-```
+
 
 ## **_Argorithms:_**
 
