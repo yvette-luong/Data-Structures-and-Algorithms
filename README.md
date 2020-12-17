@@ -114,6 +114,11 @@ is important.
 
 ---
 
+## 6.Graph
+
+| **_GOOD_**         | **_BAD_**            |
+| ------------------ | -------------------- |
+| - Relationships    | - Scaling is hard    |
 
 ## NOTE :
 
