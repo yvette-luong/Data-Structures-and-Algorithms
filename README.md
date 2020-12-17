@@ -1,6 +1,6 @@
 # Data Structures and Argorithms
 
-### _*Study material and code of Data Structures and Argorrithms use Java Script*_
+### _*Study material and code of Data Structures and Argorithms use Java Script*_
 
 ---
 
