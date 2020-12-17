@@ -1,6 +1,38 @@
 # Data Structures and Argorithms
 
-### **_Study material and code of Data Structures and Argorrithms use Java Script_**:
+### _*Study material and code of Data Structures and Argorrithms use Java Script*_
+
+---
+
+## **_Data Structures:_**
+
+```
+- Arrays
+- Stacks
+- Queues
+- Linked List
+- Trees
+- Graphs
+- Hash Tables
+```
+
+## **_Argorithms:_**
+
+- Sorting `reference to` Arrays and Trees
+- Dynamic Programming `reference to` Hash Table
+- BFS(Breadth First Search) + DFS(Depth First Search) (Searching) `reference to` Graphs and Trees
+- Recursion `reference to` Trees
+
+## **_Relationship of DS and Argorithms:_**
+
+| **_GOOD_**  | **_BAD_**        |
+| ----------- | ---------------- |
+| - Sorting   | - Array & Trees  |
+| - Dynamic   | - Hash Tables    |
+| - BFS & DFS | - Graphs & Trees |
+| - Recursion | - Trees          |
+
+---
 
 ## 1. Singly Linked List
 
@@ -97,7 +129,6 @@ is important.
 | - Ordered          |
 | - Flexible Size    |
 
-
 ### **II/ Binary Heaps**
 
 **_Idea_**
@@ -116,9 +147,9 @@ is important.
 
 ## 6.Graph
 
-| **_GOOD_**         | **_BAD_**            |
-| ------------------ | -------------------- |
-| - Relationships    | - Scaling is hard    |
+| **_GOOD_**      | **_BAD_**         |
+| --------------- | ----------------- |
+| - Relationships | - Scaling is hard |
 
 ## NOTE :
 
