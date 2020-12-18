@@ -4,7 +4,7 @@
 
 ---
 
-## **_Data Structures:_**
+## **_Data Structures_**
 
 
 - Arrays
@@ -16,7 +16,7 @@
 - Hash Tables
 
 
-## **_Argorithms:_**
+## **_Argorithms_**
 
 - Sorting `reference to` Arrays and Trees
 - Dynamic Programming `reference to` Hash Table
@@ -36,13 +36,13 @@
 
 ## 1. Singly Linked List
 
-### _Advantage_:
+### _Advantage_
 
 - it's a fairly simple implementation especially compared to the doubly one
 - require less memory
 - lil bit faster than doubly linked list
 
-### _Disadvantage_:
+### _Disadvantage_
 
 - is that it cannot be iterated in reverse or traverse from back to front. If we ever lose the reference to this Dot had node of the list it can be lost in memory forever. So its only appropriate to use when you have less.
 
@@ -50,18 +50,18 @@
 
 ## 2.Double Linked List
 
-### _Advantage_:
+### _Advantage_
 
 - can be iterated or traversed both from the front or from the back.
 - if you need to delete a previous node you don't need to traverse from the head node and find what the previous notice which a singly list linked list has no concept of.
 - good to use if you dont have limitation on memory or when you want good operation for searching for elements such as searching backwards instead of just fort's
 
-### _Disadvantage_:
+### _Disadvantage_
 
 - complex to implement and requires more memory and storage then **_Singly Linked List_**
 - need to do some extra performance on actual operation to make sure when we do `insert` or `delete` that the prev property is updated as well.
 
-### _Wrap-up_:
+### _Wrap-up_
 
 | **_GOOD_**       | **_BAD_**      |
 | ---------------- | -------------- |
@@ -72,7 +72,7 @@
 
 ---
 
-## 3.Stacks:
+## 3.Stacks
 
 **_Idea_**
 
@@ -88,7 +88,7 @@
 
 ---
 
-## 4.Queues:
+## 4.Queues
 
 **_Idea_**
 
@@ -121,7 +121,7 @@ is important.
 - `insert O(log N)`
 - `delete O(log N)`
 
-### _Wrap-up_:
+### _Wrap-up_
 
 | **_GOOD_**         | **_BAD_**            |
 | ------------------ | -------------------- |
@@ -145,11 +145,43 @@ is important.
 
 ---
 
-## 6.Graph
+## 6.Graphs 
 
 | **_GOOD_**      | **_BAD_**         |
 | --------------- | ----------------- |
 | - Relationships | - Scaling is hard |
+
+
+---
+
+## 7.Hash Tables
+
+***Idea***
+-  a way hash table works is we have the key and this key is used as the index of where to find the value in memory ( instead of using index number like in Arrays ) 
+--> `Hash Function` - is the black box that decide where to put the data in our memories in our computers
+- `Hash Function` is a function that generate a value of fixed length for each input that gets.
+- `Idempotent` : "A FUNCTION GIVING AN INPUT ALWAYS OUTPUT THE SAME OUTPUT" - example: hashing "Hello" string to hashed characters, however we have no idea how to convert those hashed characters into "Hello" 
+- `Collison`  - differents valie are inserted in the same memory place. Collision slow down our ability to access or insert information 
+
+
+### _Wrap-up_
+
+| **_GOOD_**      | **_BAD_**         |
+| --------------- | ----------------- |
+|-Fast data access|- Scaling is hard |
+
+
+#### ***Side-note***
+- SHA-256 has generator take a really long time to generate a hash and it is an overly complex hashing function that is used
+
+**_Methods_**
+
+- `insert O(1)` - hash the `key` through the `hash function` and place it automatically into the address space that it comes up with.
+- `lookup O(n)` - access the property that it is going to get hashed and direct us exactly to the address to find the values.
+- `delete O(1)` - we simply use the key right away because we know where to delete the item from and because it isn't ordered.
+- `search O(1)` 
+
+
 
 ## NOTE :
 
