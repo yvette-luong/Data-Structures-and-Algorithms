@@ -13,7 +13,7 @@ class HashTable {
     //   console.log(hash)
     } 
     return hash;
-  }
+  } //O(1)
 
   set(key, value) {
     let address = this._hash(key); //store data that we gonna insert with the key and value in this address place that we created by our hashed function, and we give it the key of "grapes"
@@ -23,24 +23,24 @@ class HashTable {
     this.data[address].push([key, value]);
     // console.log(this.data)
     return this.data;
-  }
+  } // O(1)
 
   get(key) {
     const address = this._hash(key);
     const currentBucket = this.data[address];
     if (currentBucket) {
-      for (let i = 0; i < currentBucket.length; i++) {
-        if (currentBucket[i][0] === key) {
+      for (let i = 0; i < currentBucket.length; i++) { 
+        if (currentBucket[i][0] === key) { // if current bucket by which is the index so remember is going to say zero which is going to grab this then one which is going to grab this if 'currentBucket' the grapes. So if I do zero here that means grab the first in our case is the [i] so its gonna be the 0 first grab this first array then grab the zero index within this array which will be grapes.
           return currentBucket[i][1];
         }
       }
-    }
+    } //O(1) 
     return undefined;
   } 
 }
 
 const myHashTable = new HashTable(50);
-myHashTable.set("grapes", 10000);
+console.log(myHashTable.set("grapes", 10000));
 myHashTable.get("grapes");
 myHashTable.set("apples", 9);
 myHashTable.get("apples");
