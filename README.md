@@ -33,6 +33,54 @@
 | - Recursion | - Trees          |
 
 ---
+## **_Big O Notation_** 
+
+- when we talk about Big O and scalability of code we simply mean when we grow bigger and bigger with our ***`input`***, how much does the ***`algorithm`*** slow down the less it slows down or the slower it slows down the better it is.
+
+### ***Big O Cheat Sheet:***
+
+**`-- Big Os -- `** 
+- *`O(1) Constant`* - no loops
+- *`O(log N) Logarithmic`* - usually searching algorithms have log n if they are sorted (Binary Search)
+- *`O(n) Linear`* - for loops, while loops through n items
+- *`O(n log(n)) Log Liniear`* - usually sorting operations
+- *`O(n^2) Quadratic`* - every element in a collection needs to be compared to ever other element. Two nested loops
+- *`O(2^n) Exponential`*- recursive algorithms that solves a problem of size N
+- *`O(n!) Factorial`* - you are adding a loop for every element
+
+
+*` - Iterating through half a collection is still O(n)`*
+
+*`- Two separate collections: O(a * b)`*
+
+
+**`-- What can cause time in a function? -- `**
+
+- Operations (+, -, *, /)
+- Comparisons (<, >, ==)
+- Looping (for, while)
+- Outside Function call (function())
+
+**`-- Rule Book --`**
+
+- Rule 1: Always worst Case
+- Rule 2: Remove Constants
+- Rule 3: Different inputs should have different variables. O(a+b). A and B arrays nested would be
+O(a*b)
+  + for steps in order
+  + for nested steps
+
+- Rule 4: Drop Non-dominant terms
+
+**`-- What causes Space complexity? --`**
+
+- Variables
+- Data Structures
+- Function Call
+- Allocations
+
+---
+
 
 ## 1. Singly Linked List
 
@@ -164,6 +212,12 @@ is important.
 - `Collison`  - differents valie are inserted in the same memory place. Collision slow down our ability to access or insert information 
 
 
+**_Methods_**
+- `insert O(1)` - hash the `key` through the `hash function` and place it automatically into the address space that it comes up with.
+- `lookup O(n)` - access the property that it is going to get hashed and direct us exactly to the address to find the values.
+- `delete O(1)` - we simply use the key right away because we know where to delete the item from and because it isn't ordered.
+- `search O(1)` 
+
 ### _Wrap-up_
 
 | **_GOOD_**      | **_BAD_**         |
@@ -173,13 +227,6 @@ is important.
 
 #### ***Side-note***
 - SHA-256 has generator take a really long time to generate a hash and it is an overly complex hashing function that is used
-
-**_Methods_**
-
-- `insert O(1)` - hash the `key` through the `hash function` and place it automatically into the address space that it comes up with.
-- `lookup O(n)` - access the property that it is going to get hashed and direct us exactly to the address to find the values.
-- `delete O(1)` - we simply use the key right away because we know where to delete the item from and because it isn't ordered.
-- `search O(1)` 
 
 
 
