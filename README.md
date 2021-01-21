@@ -40,12 +40,35 @@
 ### ***Big O Cheat Sheet:***
 
 **`-- Big Os -- `** 
-- *`O(1) Constant`* - no loops
-- *`O(log N) Logarithmic`* - usually searching algorithms have log n if they are sorted (Binary Search)
-- *`O(n) Linear`* - for loops, while loops through n items
+- *`O(1) Constant Time`* - no loops - does not matter how big our inputs are, we always do the constant amount of time on the function
+```
+Example:
+
+function compressFirstBox(boxes) {
+  console.log(boxes[0]);
+} //ES5
+
+ ```
+- *`O(log N) Logarithmic`* - usually searching 
+algorithms have log n if they are sorted (Binary Search)
+
+- *`O(n) Linear Time`* - for loops, while loops through n items
+
+```
+Example: 
+
+const compressAllBoxes = boxes =>{
+  boxes.forEach(box => console.log(box));
+} //ES6
+
+```
+
 - *`O(n log(n)) Log Liniear`* - usually sorting operations
+
 - *`O(n^2) Quadratic`* - every element in a collection needs to be compared to ever other element. Two nested loops
+
 - *`O(2^n) Exponential`*- recursive algorithms that solves a problem of size N
+
 - *`O(n!) Factorial`* - you are adding a loop for every element
 
 
@@ -65,6 +88,20 @@
 
 - Rule 1: Always worst Case
 - Rule 2: Remove Constants
+
+```
+function compressBoxesTwice(boxes) {
+  boxes.forEach(function(boxes) {
+    console.log(boxes)
+  });
+
+  boxes.forEach(function(boxes) {
+    console.log(boxes);
+  })
+}
+
+-> O(2n) but Drop the Constant -> O(n)
+```
 - Rule 3: Different inputs should have different variables. O(a+b). A and B arrays nested would be
 O(a*b)
   + for steps in order
