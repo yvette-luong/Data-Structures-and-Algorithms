@@ -115,6 +115,8 @@ O(a*b)
 - Data Structures
 - Function Call
 - Allocations
+---
+## ***A. D a t a S t r u c t u r e s***
 
 ---
 
@@ -265,8 +267,14 @@ is important.
 #### ***Side-note***
 - SHA-256 has generator take a really long time to generate a hash and it is an overly complex hashing function that is used
 
+---
+## ***B. A l g o r i t h m s***
+---
+## :one: Recursion:
 
 
+
+---
 ## NOTE :
 
 ### **_Question_**
