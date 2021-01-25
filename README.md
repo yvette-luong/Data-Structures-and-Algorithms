@@ -6,7 +6,6 @@
 
 ## **_Data Structures_**
 
-
 - Arrays
 - Stacks
 - Queues
@@ -14,7 +13,6 @@
 - Trees
 - Graphs
 - Hash Tables
-
 
 ## **_Argorithms_**
 
@@ -33,14 +31,17 @@
 | - Recursion | - Trees          |
 
 ---
-## **_Big O Notation_** 
 
-- when we talk about Big O and scalability of code we simply mean when we grow bigger and bigger with our ***`input`***, how much does the ***`algorithm`*** slow down the less it slows down or the slower it slows down the better it is.
+## **_Big O Notation_**
 
-### ***Big O Cheat Sheet:***
+- when we talk about Big O and scalability of code we simply mean when we grow bigger and bigger with our **_`input`_**, how much does the **_`algorithm`_** slow down the less it slows down or the slower it slows down the better it is.
 
-**`-- Big Os -- `** 
-- *`O(1) Constant Time`* - no loops - does not matter how big our inputs are, we always do the constant amount of time on the function
+### **_Big O Cheat Sheet:_**
+
+**`-- Big Os -- `**
+
+- _`O(1) Constant Time`_ - no loops - does not matter how big our inputs are, we always do the constant amount of time on the function
+
 ```
 Example:
 
@@ -48,14 +49,15 @@ function compressFirstBox(boxes) {
   console.log(boxes[0]);
 } //ES5
 
- ```
-- *`O(log N) Logarithmic`* - usually searching 
-algorithms have log n if they are sorted (Binary Search)
+```
 
-- *`O(n) Linear Time`* - for loops, while loops through n items
+- _`O(log N) Logarithmic`_ - usually searching
+  algorithms have log n if they are sorted (Binary Search)
+
+- _`O(n) Linear Time`_ - for loops, while loops through n items
 
 ```
-Example: 
+Example:
 
 const compressAllBoxes = boxes =>{
   boxes.forEach(box => console.log(box));
@@ -63,23 +65,21 @@ const compressAllBoxes = boxes =>{
 
 ```
 
-- *`O(n log(n)) Log Liniear`* - usually sorting operations
+- _`O(n log(n)) Log Liniear`_ - usually sorting operations
 
-- *`O(n^2) Quadratic`* - every element in a collection needs to be compared to ever other element. Two nested loops
+- _`O(n^2) Quadratic`_ - every element in a collection needs to be compared to ever other element. Two nested loops
 
-- *`O(2^n) Exponential`*- recursive algorithms that solves a problem of size N
+- _`O(2^n) Exponential`_- recursive algorithms that solves a problem of size N
 
-- *`O(n!) Factorial`* - you are adding a loop for every element
+- _`O(n!) Factorial`_ - you are adding a loop for every element
 
+_` - Iterating through half a collection is still O(n)`_
 
-*` - Iterating through half a collection is still O(n)`*
-
-*`- Two separate collections: O(a * b)`*
-
+_`- Two separate collections: O(a _ b)`\*
 
 **`-- What can cause time in a function? -- `**
 
-- Operations (+, -, *, /)
+- Operations (+, -, \*, /)
 - Comparisons (<, >, ==)
 - Looping (for, while)
 - Outside Function call (function())
@@ -102,10 +102,12 @@ function compressBoxesTwice(boxes) {
 
 -> O(2n) but Drop the Constant -> O(n)
 ```
+
 - Rule 3: Different inputs should have different variables. O(a+b). A and B arrays nested would be
-O(a*b)
-  + for steps in order
-  + for nested steps
+  O(a\*b)
+
+  - for steps in order
+  - for nested steps
 
 - Rule 4: Drop Non-dominant terms
 
@@ -115,11 +117,12 @@ O(a*b)
 - Data Structures
 - Function Call
 - Allocations
----
-## ***A. D a t a S t r u c t u r e s***
 
 ---
 
+## **_A. D a t a S t r u c t u r e s_**
+
+---
 
 ## 1. Singly Linked List
 
@@ -195,12 +198,24 @@ access first that is first.
 ## 5.Trees
 
 ### **I/ Binary Tree**
+***A binary tree is a specific type of tree. It is called a binary tree because each node in the tree can only have a maximum of two child nodes. It is common for a node's children to be called either `left` or `right`***
 
 **_Idea_**
 
 - If we know how many levels are binary tree is we can find out how many total nodes there (**`Height`** starts from count of 1) : **2^h -1**
-
 is important.
+
+```python
+'''
+This is an example of what a class for Binary tree node might look like: 
+'''
+  class BinaryTreeNode:
+    def __init__(self, value):
+      self.value = value
+      self.left = None
+      self.right = None
+```
+
 
 **_Method_**
 
@@ -232,49 +247,64 @@ is important.
 
 ---
 
-## 6.Graphs 
+## 6.Graphs
 
 | **_GOOD_**      | **_BAD_**         |
 | --------------- | ----------------- |
 | - Relationships | - Scaling is hard |
 
-
 ---
 
 ## 7.Hash Tables
 
-***Idea***
--  a way hash table works is we have the key and this key is used as the index of where to find the value in memory ( instead of using index number like in Arrays ) 
---> `Hash Function` - is the black box that decide where to put the data in our memories in our computers
-- `Hash Function` is a function that generate a value of fixed length for each input that gets.
-- `Idempotent` : "A FUNCTION GIVING AN INPUT ALWAYS OUTPUT THE SAME OUTPUT" - example: hashing "Hello" string to hashed characters, however we have no idea how to convert those hashed characters into "Hello" 
-- `Collison`  - differents valie are inserted in the same memory place. Collision slow down our ability to access or insert information 
+**_Idea_**
 
+- a way hash table works is we have the key and this key is used as the index of where to find the value in memory ( instead of using index number like in Arrays )
+  --> `Hash Function` - is the black box that decide where to put the data in our memories in our computers
+- `Hash Function` is a function that generate a value of fixed length for each input that gets.
+- `Idempotent` : "A FUNCTION GIVING AN INPUT ALWAYS OUTPUT THE SAME OUTPUT" - example: hashing "Hello" string to hashed characters, however we have no idea how to convert those hashed characters into "Hello"
+- `Collison` - differents valie are inserted in the same memory place. Collision slow down our ability to access or insert information
 
 **_Methods_**
+
 - `insert O(1)` - hash the `key` through the `hash function` and place it automatically into the address space that it comes up with.
 - `lookup O(n)` - access the property that it is going to get hashed and direct us exactly to the address to find the values.
 - `delete O(1)` - we simply use the key right away because we know where to delete the item from and because it isn't ordered.
-- `search O(1)` 
+- `search O(1)`
 
 ### _Wrap-up_
 
-| **_GOOD_**      | **_BAD_**         |
-| --------------- | ----------------- |
-|-Fast data access|- Scaling is hard |
+| **_GOOD_**        | **_BAD_**         |
+| ----------------- | ----------------- |
+| -Fast data access | - Scaling is hard |
 
+#### **_Side-note_**
 
-#### ***Side-note***
 - SHA-256 has generator take a really long time to generate a hash and it is an overly complex hashing function that is used
 
 ---
-## ***B. A l g o r i t h m s***
+
+## 📚 **_B. A l g o r i t h m s_**
+
 ---
+
 ## :one: Recursion:
 
+**_Recursion is a function that refer to itself inside a function_**
 
+```js
+function inception() {
+  inception(); // This is a recursive function.
+  // Because when this function runs, its going to call itself and run again
+}
+```
 
+### _Advantage_
+
+- Recursion is helpful for tasks that have repeated subtasks to do 
+- Recursion concept is going to be used in `Seaching` and `Sorting` algorithms 
 ---
+
 ## NOTE :
 
 ### **_Question_**
