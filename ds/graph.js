@@ -3,7 +3,7 @@ class Graph {
       this.numberOfNodes = 0; 
       this.adjacentList = {}; 
     } 
-    addVertex(node)  { //create nodes 
+    addVertex(node)  { //create new nodes 
       this.adjacentList[node] = []; 
       this.numberOfNodes++;
     } 
@@ -27,6 +27,7 @@ class Graph {
   } 
   
   var myGraph = new Graph();
+  // console.log(myGraph.addVertex('0'))
   myGraph.addVertex('0');
   myGraph.addVertex('1');
   myGraph.addVertex('2');

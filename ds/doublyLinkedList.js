@@ -117,12 +117,11 @@ myDoublyLinkedList.append(16);
 //     prev: { value: 5, next: [Circular], prev: [Object] } },
 //  length: 3 }
 
-// myLinkedList.prepend(2);
-// // myLinkedList.printList(); //output: => [ 2, 10, 5, 16 ]
-// myLinkedList.insert(2,99);
-// myLinkedList.insert(20,69);
-// myLinkedList.printList();
-// myLinkedList.remove(2)
-// myDoublyLinkedList.printList()
+myDoublyLinkedList.prepend(2);
+myDoublyLinkedList.insert(2,99);
+myDoublyLinkedList.insert(20,69);
+myDoublyLinkedList.printList();
+myDoublyLinkedList.remove(2)
+myDoublyLinkedList.printList()
 
 

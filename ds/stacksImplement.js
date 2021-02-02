@@ -47,14 +47,15 @@ class Stack {
 }
 
 const myStack = new Stack();
-// myStack.peek()
+myStack.peek()
 myStack.push("Google");
 myStack.push("Udemy"); //Udemy come in last so Udemy locate on top of Google
 myStack.push("Discord");
-myStack.peek();
-myStack.pop();
-myStack.pop();
-myStack.pop();
+console.log(myStack)
+// myStack.peek();
+// myStack.pop();
+// myStack.pop();
+// myStack.pop();
 
 //Discord
 //Udemy

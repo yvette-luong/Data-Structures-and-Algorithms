@@ -1,6 +1,6 @@
 # Data Structures and Argorithms
 
-### _*Study material and code of Data Structures and Argorithms use Java Script*_
+## _*Study material and code of Data Structures and Argorithms use Java Script*_
 
 ---
 
@@ -38,17 +38,14 @@
 
 ### **_Big O Cheat Sheet:_**
 
-**`-- Big Os -- `**
+**`-- Big Os --`**
 
 - _`O(1) Constant Time`_ - no loops - does not matter how big our inputs are, we always do the constant amount of time on the function
 
-```
-Example:
-
-function compressFirstBox(boxes) {
+```js
+Example: function compressFirstBox(boxes) {
   console.log(boxes[0]);
 } //ES5
-
 ```
 
 - _`O(log N) Logarithmic`_ - usually searching
@@ -56,13 +53,10 @@ function compressFirstBox(boxes) {
 
 - _`O(n) Linear Time`_ - for loops, while loops through n items
 
-```
-Example:
-
-const compressAllBoxes = boxes =>{
-  boxes.forEach(box => console.log(box));
-} //ES6
-
+```js
+Example: const compressAllBoxes = (boxes) => {
+  boxes.forEach((box) => console.log(box));
+}; //ES6
 ```
 
 - _`O(n log(n)) Log Liniear`_ - usually sorting operations
@@ -73,11 +67,11 @@ const compressAllBoxes = boxes =>{
 
 - _`O(n!) Factorial`_ - you are adding a loop for every element
 
-_` - Iterating through half a collection is still O(n)`_
+_`- Iterating through half a collection is still O(n)`_
 
 _`- Two separate collections: O(a _ b)`\*
 
-**`-- What can cause time in a function? -- `**
+**`-- What can cause time in a function? --`**
 
 - Operations (+, -, \*, /)
 - Comparisons (<, >, ==)
@@ -89,7 +83,7 @@ _`- Two separate collections: O(a _ b)`\*
 - Rule 1: Always worst Case
 - Rule 2: Remove Constants
 
-```
+```js
 function compressBoxesTwice(boxes) {
   boxes.forEach(function(boxes) {
     console.log(boxes)
@@ -140,13 +134,13 @@ function compressBoxesTwice(boxes) {
 
 ## 2.Double Linked List
 
-### _Advantage_
+### _AAdvantage_
 
 - can be iterated or traversed both from the front or from the back.
 - if you need to delete a previous node you don't need to traverse from the head node and find what the previous notice which a singly list linked list has no concept of.
 - good to use if you dont have limitation on memory or when you want good operation for searching for elements such as searching backwards instead of just fort's
 
-### _Disadvantage_
+### _DDisadvantage_
 
 - complex to implement and requires more memory and storage then **_Singly Linked List_**
 - need to do some extra performance on actual operation to make sure when we do `insert` or `delete` that the prev property is updated as well.
@@ -198,16 +192,17 @@ access first that is first.
 ## 5.Trees
 
 ### **I/ Binary Tree**
-***A binary tree is a specific type of tree. It is called a binary tree because each node in the tree can only have a maximum of two child nodes. It is common for a node's children to be called either `left` or `right`***
+
+**_A binary tree is a specific type of tree. It is called a binary tree because each node in the tree can only have a maximum of two child nodes. It is common for a node's children to be called either `left` or `right`_**
 
 **_Idea_**
 
 - If we know how many levels are binary tree is we can find out how many total nodes there (**`Height`** starts from count of 1) : **2^h -1**
-is important.
+  is important.
 
 ```python
 '''
-This is an example of what a class for Binary tree node might look like: 
+This is an example of what a class for Binary tree node might look like:
 '''
   class BinaryTreeNode:
     def __init__(self, value):
@@ -216,14 +211,13 @@ This is an example of what a class for Binary tree node might look like:
       self.right = None
 ```
 
-
 **_Method_**
 
 - `lookup O(log N)` - **_divide & conquer_** - like looking through a phone book.
 - `insert O(log N)`
 - `delete O(log N)`
 
-### _Wrap-up_
+### _WWrap-up_
 
 | **_GOOD_**         | **_BAD_**            |
 | ------------------ | -------------------- |
@@ -272,7 +266,7 @@ This is an example of what a class for Binary tree node might look like:
 - `delete O(1)` - we simply use the key right away because we know where to delete the item from and because it isn't ordered.
 - `search O(1)`
 
-### _Wrap-up_
+### _WWWrap-up_
 
 | **_GOOD_**        | **_BAD_**         |
 | ----------------- | ----------------- |
@@ -288,7 +282,7 @@ This is an example of what a class for Binary tree node might look like:
 
 ---
 
-## :one: Recursion:
+## :one: Recursion
 
 **_Recursion is a function that refer to itself inside a function_**
 
@@ -299,13 +293,14 @@ function inception() {
 }
 ```
 
-### _Advantage_
+### _AAAdvantage_
 
-- Recursion is helpful for tasks that have repeated subtasks to do 
-- Recursion concept is going to be used in `Seaching` and `Sorting` algorithms 
+- Recursion is helpful for tasks that have repeated subtasks to do
+- Recursion concept is going to be used in `Seaching` and `Sorting` algorithms
+
 ---
 
-## NOTE :
+## NOTE
 
 ### **_Question_**
 

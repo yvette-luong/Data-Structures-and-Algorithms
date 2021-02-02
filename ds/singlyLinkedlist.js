@@ -1,3 +1,4 @@
+
 // Create the below linked list:
 // myLinkedList = {
 //   head: {
@@ -122,15 +123,15 @@ class SinglyLinkedList {
   }
   
   let myLinkedList = new SinglyLinkedList(10);
-  // console.log(myLinkedList)
+  console.log(myLinkedList)
   myLinkedList.append(5);
   myLinkedList.append(16);
-  // myLinkedList.prepend(2);
-  // // myLinkedList.printList(); //output: => [ 2, 10, 5, 16 ]
-  // myLinkedList.insert(2,99);
-  // myLinkedList.insert(20,69);
-  // myLinkedList.printList();
-  // myLinkedList.remove(2)
+  myLinkedList.prepend(2);
+ 
+  myLinkedList.insert(2,99);
+  myLinkedList.insert(20,69);
+  myLinkedList.printList();
+  myLinkedList.remove(2)
   // myDoublyLinkedList.printList()
   
   
